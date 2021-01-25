@@ -1,0 +1,6 @@
+config {
+  type: "assertion",
+  dependencies: ["user_stats"]
+}
+
+SELECT 1 as one

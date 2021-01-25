@@ -1,8 +1,6 @@
 config {
-  type: "incremental",
-  schema: "reporting",
-  tags: ["daily"],
-  description: "Create a summary table for all users including statistics on questions, answeers and badges received.",
+  type: "table",
+    description: "Create a summary table for all users including statistics on questions, answeers and badges received.",
   columns: {
     user_id: `A unique identifier for a user`,
     age: `The age of a user`,
@@ -17,11 +15,11 @@ config {
     last_question_posted_at: `The time the user last posted an answer`,
     last_answer_posted_at: `The time the user last posted a question`,
   },
-  assertions: {
+    assertions: {
     uniqueKey: ["user_id"],
+    nonNull: ["user_tenure"],
     rowConditions: ["badge_count >= 0"]
-  },
-  bigquery:{partitionBy: "creation_date"}
+  }
 }
 
 select
@@ -44,8 +42,5 @@ from
     on stg_users.user_id = stg_badges.user_id
   left join ${ref("posts_combined")} as posts_all
     on stg_users.user_id = posts_all.owner_user_id
-
-${ when(incremental(), `WHERE creation_date > (SELECT MAX(creation_date) FROM ${self()})`) }
-
 group by
   1,2,3,4,5
