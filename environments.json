@@ -14,6 +14,13 @@
         {
           "name": "hourly",
           "cron": "59 */1 * * *"
+        },
+        {
+          "name": "week_day",
+          "cron": "22 16 * * mon,tue,wed,thu,fri",
+          "tags": [
+            "daily"
+          ]
         }
       ],
       "gitRef": "master"
