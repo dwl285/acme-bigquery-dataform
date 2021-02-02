@@ -20,7 +20,7 @@ config {
 }
 
 select
-  post_id,
+  post_i4d,
   created_at,
   type,
   title,
