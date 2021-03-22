@@ -15,7 +15,7 @@ config {
   },
   assertions: {
     uniqueKey: ["post_id"],
-    nonNull: ["post_id", "created_at"]
+    nonNull: ["post_id", "created_at", "body"]
   }
 }
 
