@@ -6,7 +6,7 @@
       "schedules": [
         {
           "name": "daily",
-          "cron": "30 14 * * *",
+          "cron": "30 16 * * *",
           "tags": [
             "daily"
           ]
