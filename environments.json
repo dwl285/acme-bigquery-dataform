@@ -16,11 +16,8 @@
           "cron": "59 */1 * * *"
         },
         {
-          "name": "new",
-          "cron": "31 17 * * mon,tue,wed,thu,fri,sat,sun",
-          "tags": [
-            "daily"
-          ]
+          "name": "test",
+          "cron": "2 19 * * *"
         }
       ],
       "gitRef": "master"
