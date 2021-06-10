@@ -1,6 +1,5 @@
 config {
   type: "table",
-  dependencies: ["abc_reporting_user_stats_assertions_uniqueKey_0"],
   schema: "reporting",
   tags: ["daily"],
   description: "Combine both questions and answers into a single posts_all table",
