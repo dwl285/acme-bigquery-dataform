@@ -5,3 +5,6 @@ config {
   name: "badges",
   description: "raw badges table"
 }
+
+
+
