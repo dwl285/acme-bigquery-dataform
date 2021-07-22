@@ -4,7 +4,7 @@ config {
   tags: ["daily"],
   description: "Combine both questions and answers into a single posts_all table",
   columns: {
-    post_id: `A unique identifier for a post`,
+    post_id: `A unique identifier for a post.`,
     created_at: `The time the post was created`,
     type: `The post type: question or answer`,
     title: `The title of the post`,
