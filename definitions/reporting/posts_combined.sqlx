@@ -19,7 +19,6 @@ config {
   }
 }
 
--- this is a test
 
 select
   post_id,
