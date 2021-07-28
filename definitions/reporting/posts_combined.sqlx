@@ -42,3 +42,4 @@ select
   parent_id
 from
   ${ref("stg_posts_questions")}
+
