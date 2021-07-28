@@ -10,6 +10,8 @@ config {
     title: `The title of the post`,
     body: `The content in the body of the post`
   },
+
+  
   bigquery: {
     partitionBy: "date(created_at)"
   },
