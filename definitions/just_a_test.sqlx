@@ -1,5 +1,0 @@
-config {
-  type: "view"
-}
-
-select 1 as a
