@@ -1,6 +1,0 @@
-
-config { type: "incremental" }
-
-SELECT current_date() AS snapshot_date, customer_id, name, account_settings FROM productiondb.customers
-
-${ when(incremental(), `where snapshot_date > (select max(snapshot_date) from ${self()})`) }
