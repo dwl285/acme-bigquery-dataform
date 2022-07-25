@@ -2,5 +2,5 @@
     "defaultSchema": "acme_bigquery",
     "assertionSchema": "acme_bigquery_assertions",
     "warehouse": "bigquery",
-    "defaultDatabase": "ghhuon"
+    "defaultDatabase": "dataform-dogfood-shared"
 }
